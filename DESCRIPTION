@@ -1,7 +1,7 @@
 Package: ExtractHybridV2
 Type: Package
 Title: EPA Hybrid V2 climate data
-Version: 2.1.0
+Version: 2.1.1
 Author: Hyung Eum
 Maintainer: Hyung Eum <hyung.eum@gov.ab.ca>
 Description: Extracting the hybrid V2 climate dataset for target points or within a bounding box and a user-defined shape file.
