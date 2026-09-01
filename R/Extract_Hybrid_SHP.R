@@ -53,7 +53,7 @@ Extract_HybridV2_SHP<-function(Path.SHP,Basin.Name,Path.Hybrid,Target.Met.Var,Bu
   # Read hybrid climate data
 
   bd.Hybrid<-as.Date("1950-01-01")
-  ed.Hybrid<-as.Date("2019-12-31")
+  ed.Hybrid<-as.Date("2024-12-31")
   Hybrid.Date<-as.Date((seq(bd.Hybrid,ed.Hybrid,by="1 day")))
 
   bd.Selected<-as.Date(paste(Start.Year,"-01-01",sep=""))
