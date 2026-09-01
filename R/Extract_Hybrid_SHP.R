@@ -66,6 +66,7 @@ Extract_HybridV2_SHP<-function(Path.SHP,Basin.Name,Path.Hybrid,Target.Met.Var,Bu
     Path.Hybrid.Var<-paste0(Path.Hybrid,'/Hybrid_V2_Daily_', iVar,'_1950-2024.RData')
     print(paste0("Reading data: ",iVar))
     Hybrid.Var<-get(load(Path.Hybrid.Var))
+    Var.name<-iVar
     print(paste0("Extracting data: ",iVar))
 
     Var.Target<-Hybrid.Var[(Order.Start:Order.End),x.grid]
