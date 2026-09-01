@@ -64,6 +64,7 @@ Extract_HybridV2_Points<-function(List.Points,Project.Name,Path.Hybrid,
     Path.Hybrid.Var<-paste0(Path.Hybrid,'/Hybrid_V2_Daily_', iVar,'_1950-2024.RData')
     print(paste0("Reading data: ",iVar))
     Hybrid.Var<-get(load(Path.Hybrid.Var))
+    Var.name<-iVar
     print(paste0("Extracting data: ",iVar))
 
     Var.Target<-Hybrid.Var[(Order.Start:Order.End),Loc.Point.in.Hybrid]
